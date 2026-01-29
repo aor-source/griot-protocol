@@ -1,0 +1,20 @@
+# Griot Protocol - Dependencies
+# "Damn the man. Save the empire."
+
+# Core (optional - graceful degradation if not installed)
+python-dotenv>=1.0.0
+
+# OpenTimestamps for Bitcoin anchoring (FREE)
+opentimestamps-client>=0.7.0
+
+# Web3 for EVM chain anchoring (Ethereum, Polygon, Base, Arbitrum)
+web3>=6.0.0
+
+# Optional: API server dependencies (if building web interface)
+# fastapi>=0.100.0
+# uvicorn>=0.23.0
+# python-multipart>=0.0.6
+# pydantic>=2.0.0
+
+# Optional: IPFS support
+# ipfshttpclient>=0.8.0
