@@ -79,6 +79,32 @@ This creates a post-commit hook that:
 2. Creates a JSON manifest in `.griot/proofs/`
 3. Anchors to Bitcoin via OpenTimestamps (if installed)
 
+## Biter Check (Anti-Plagiarism)
+
+Expose the vultures. When someone steals your work, prove it mathematically.
+
+```bash
+# Compare your sealed original against the suspect's work
+python biter_check.py my_original.txt their_stolen_version.txt
+
+# Output to specific directory
+python biter_check.py my_lyrics.txt their_track.txt --output ./evidence
+```
+
+**What it does:**
+- Calculates overall similarity percentage
+- Identifies specific stolen passages
+- Shows what was modified to hide the theft
+- Generates HTML visual diff
+- Creates JSON report for legal evidence
+
+**Combined with your .griot/.ots proof:**
+- WHAT: Specific passages that were copied
+- WHEN: Blockchain proof your work existed first
+- HOW MUCH: Quantified similarity for court
+
+The ultimate diss track is mathematical proof.
+
 ## MAIF Research Pipeline
 
 For sealing audio research outputs:
@@ -137,6 +163,36 @@ The Griot Protocol is built for:
 - **Data Authenticity:** Verify documents haven't been altered
 
 In an age of deepfakes and deniability, we need cryptographic truth.
+
+---
+
+## Research Papers
+
+The theoretical and historical foundations of the Griot Protocol are documented in two research papers (see `docs/` folder):
+
+### Paper I: The Immutable Truth Ledger
+*From the Mandinka Oral Tradition to SHA-256 Anchoring*
+
+- The West African Griot (Jeli) tradition as the original "Single Source of Truth"
+- How the Epic of Sundiata was preserved for 700 years through oral transmission
+- Complete history of cryptography from the Scytale to SHA-256
+- Why SHA-256 is "thermodynamically secure" (breaking it requires more energy than the sun produces)
+- Technical architecture of blockchain anchoring via OpenTimestamps
+
+### Paper II: Biters - A Polemic on Plagiarism
+*An Analysis of Vultures in the Era of Infinite Reproduction*
+
+- The sociology of "biting" in Hip Hop culture
+- The diss track as a decentralized peer review system
+- "Sherlocking" in tech (Apple vs. Karelia, wrapper startups)
+- Generative AI as the "Ultimate Biter" and Model Collapse
+- How the Griot Protocol serves as the anti-biter weapon
+
+### Appendix: The Griot's Mixtape
+Three lyrical compositions accompanying the research:
+- **Track 1: The Silent Edit** - On digital memory holes and the rewriting of history
+- **Track 2: The Diss (To the Biters)** - Addressing the vultures
+- **Track 3: The Proof (Math Rap)** - The thermodynamic security of SHA-256
 
 ---
 
