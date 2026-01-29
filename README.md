@@ -105,24 +105,23 @@ python biter_check.py my_lyrics.txt their_track.txt --output ./evidence
 
 The ultimate diss track is mathematical proof.
 
-## MAIF Research Pipeline
+## AoR Research Pipeline
 
 For sealing audio research outputs:
 
 ```bash
 # Process audio files through the pipeline
-python maif_griot_pipeline.py process --input ./tracks --output ./results
+python aor_griot_pipeline.py process --input ./tracks --output ./results
 
 # Verify a sealed corpus
-python maif_griot_pipeline.py verify results/corpus_manifest.json
+python aor_griot_pipeline.py verify results/corpus_manifest.json
 ```
 
 The pipeline:
 1. Scans for audio files (mp3, wav, flac, etc.)
-2. Runs MAIF analysis (if MAIF_Gen.py is available)
-3. Generates Truth Seals for all files
-4. Creates per-track manifests
-5. Generates a Genesis Seal (root hash of entire corpus)
+2. Generates Truth Seals for all files
+3. Creates per-track manifests
+4. Generates a Genesis Seal (root hash of entire corpus)
 
 ## Output Files
 
@@ -163,6 +162,20 @@ The Griot Protocol is built for:
 - **Data Authenticity:** Verify documents haven't been altered
 
 In an age of deepfakes and deniability, we need cryptographic truth.
+
+---
+
+## The Griot's Mixtape
+
+Original tracks sealed with the Griot Protocol (see `tracks/` folder):
+
+| Track | Theme |
+|-------|-------|
+| **The Silent Edit** | Digital memory holes, the rewriting of history |
+| **Vultures in the Server Room** | Corporate biters, AI theft, defending authenticity |
+| **Immutable (SHA-256)** | The thermodynamic certainty of cryptographic truth |
+
+These tracks are sealed and blockchain-anchored. Any biter who touches them will be exposed.
 
 ---
 
